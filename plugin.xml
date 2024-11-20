@@ -25,7 +25,7 @@
             </dict>
        </config-file>
 
-        <dependency id="cordova-plugin-add-swift-support" url="https://github.com/OutSystems/cordova-plugin-add-swift-support.git#2.0.3-OS1"/>
+        <preference name="UseSwiftLanguageVersion" value="5" />
         
         <header-file src="src/ios/CDViOSWidget.h" />
         <source-file src="src/ios/CDViOSWidget.m" />
