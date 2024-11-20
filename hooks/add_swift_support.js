@@ -27,6 +27,7 @@ module.exports = function(context) {
                     buildConfig.buildSettings['SWIFT_VERSION'] = '5.3';
                     console.log('erro_swift Set SWIFT_VERSION to 5.3 for build configuration:', buildConfig.name);
                 } else {
+                    buildConfig.buildSettings['SWIFT_VERSION'] = '5.0';
                     console.log('erro_swift- Set SWIFT_VERSION ja configurado:');
                     }
             }
