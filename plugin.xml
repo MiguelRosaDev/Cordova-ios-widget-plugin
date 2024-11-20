@@ -45,5 +45,7 @@
         
         <framework src="WidgetKit.framework" />
         <framework src="SwiftUI.framework" />
+
+        <preference name="SWIFT_VERSION" value="5.3" />
     </platform>
 </plugin>
