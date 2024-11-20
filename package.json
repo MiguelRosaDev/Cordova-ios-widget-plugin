@@ -32,8 +32,5 @@
         "cordova-ios": ">=6.0.0"
       }
     }
-  },
-  "dependencies": {
-    "xcode": "^3.0.1"
   }
 }
