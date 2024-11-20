@@ -154,6 +154,9 @@ module.exports = context => {
               }
             }
 
+            xcodeProject.updateBuildProperty('SWIFT_VERSION', '5.0', buildConfig.name);
+            console.log('Update SWIFT version to 5.0', buildConfig.name);
+
             if (buildConfig.name === 'Debug') {
               if (xcodeProject.getBuildProperty('SWIFT_OPTIMIZATION_LEVEL', buildConfig.name) !== '"-Onone"') {
                 xcodeProject.updateBuildProperty('SWIFT_OPTIMIZATION_LEVEL', '"-Onone"', buildConfig.name);
