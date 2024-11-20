@@ -32,7 +32,6 @@ struct MyWidgetEntryView : View {
     }
 }
 
-@main
 struct MyWidget: Widget {
     let kind: String = "MyWidget"
 
