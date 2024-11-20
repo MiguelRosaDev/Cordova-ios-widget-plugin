@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-ios-widget"
+        version="0.0.1">
+    <name>iOS Widget Plugin</name>
+    <description>Cordova iOS Widget Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,ios,widget</keywords>
+    
+    <js-module src="www/widget.js" name="widget">
+        <clobbers target="cordova.plugins.iosWidget" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="iOSWidget">
+                <param name="ios-package" value="CDViOSWidget" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/CDViOSWidget.h" />
+        <source-file src="src/ios/CDViOSWidget.m" />
+    </platform>
+</plugin>
