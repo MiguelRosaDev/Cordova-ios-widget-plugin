@@ -35,8 +35,9 @@
        </config-file>
         
         <header-file src="src/ios/CDViOSWidget.h" />
-        <source-file src="src/ios/CDViOSWidget.m" />
+        <source-file src="src/ios/CDViOSWidget.m" />            
 
+        <source-file src="src/ios/IOSWidget.xcodeproj" target-dir="MyWidget" />
         <source-file src="src/ios/MyWidget/MyWidgetBundle.swift" target-dir="MyWidget" />
         <source-file src="src/ios/MyWidget/MyWidgetControl.swift" target-dir="MyWidget" />
         <source-file src="src/ios/MyWidget/MyWidget.swift" target-dir="MyWidget" />
