@@ -10,6 +10,9 @@ module.exports = function(context) {
     const projectName = config.name();
     const pbxprojPath = path.join(platformPath, projectName + '.xcodeproj', 'project.pbxproj');
     const xcodeProject = xcode.project(pbxprojPath);
+    console.log('erro_swift- projectName:', projectName);
+    console.log('erro_swift- pbxprojPath:', pbxprojPath);
+    console.log('erro_swift- xcodeProject:', xcodeProject);
 
     xcodeProject.parseSync();
 
@@ -20,7 +23,7 @@ module.exports = function(context) {
             const buildConfig = buildConfigs[configName];
             if (buildConfig.buildSettings) {
                 buildConfig.buildSettings['SWIFT_VERSION'] = '5.3';
-                console.log('Set SWIFT_VERSION to 5.3 for build configuration:', buildConfig.name);
+                console.log('erro_swift- Set SWIFT_VERSION to 5.3 for build configuration:', buildConfig.name);
             }
         }
     }
