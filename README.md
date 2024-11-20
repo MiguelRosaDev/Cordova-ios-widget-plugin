@@ -31,7 +31,7 @@ cordova plugin add cordova-plugin-ios-widget
 ### 1. Update the Widget
 On the JavaScript side, invoke the `updateWidget` method to update the widget text:
 ```javascript
-cordova.plugins.androidWidget.updateWidget("Widget Text", function(success) {
+cordova.plugins.iosWidget.updateWidget("Widget Text", function(success) {
     console.log("Widget updated successfully!");
 }, function(error) {
     console.error("Error updating widget:", error);
