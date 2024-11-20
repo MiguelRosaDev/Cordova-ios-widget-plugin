@@ -6,7 +6,8 @@
     "id": "cordova-plugin-ios-widget",
     "platforms": [
       "ios"
-    ]
+    ],
+    "swift-version": "5.0"
   },
   "keywords": [
     "ecosystem:cordova",
