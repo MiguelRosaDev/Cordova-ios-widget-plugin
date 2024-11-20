@@ -37,12 +37,13 @@
         <header-file src="src/ios/CDViOSWidget.h" />
         <source-file src="src/ios/CDViOSWidget.m" />            
 
-        <source-file src="src/ios/IOSWidget.xcodeproj" target-dir="MyWidget" />
         <source-file src="src/ios/MyWidget/MyWidgetBundle.swift" target-dir="MyWidget" />
         <source-file src="src/ios/MyWidget/MyWidgetControl.swift" target-dir="MyWidget" />
         <source-file src="src/ios/MyWidget/MyWidget.swift" target-dir="MyWidget" />
         <source-file src="src/ios/MyWidget/MyWidgetLiveActivity.swift" target-dir="MyWidget" />
         <source-file src="src/ios/MyWidget/AppIntent.swift" target-dir="MyWidget" />
+
+        <resource-file src="src/ios/MyWidget/Assets.xcassets" />
         
         <framework src="WidgetKit.framework" />
         <framework src="SwiftUI.framework" />
