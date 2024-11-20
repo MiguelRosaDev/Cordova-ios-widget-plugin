@@ -17,8 +17,24 @@
                 <param name="ios-package" value="CDViOSWidget" />
             </feature>
         </config-file>
+
+        <config-file target="*-Info.plist" parent="NSExtension">
+            <dict>
+                <key>NSExtensionPointIdentifier</key>
+                <string>com.apple.widgetkit-extension</string>
+            </dict>
+       </config-file>
         
         <header-file src="src/ios/CDViOSWidget.h" />
         <source-file src="src/ios/CDViOSWidget.m" />
+
+        <source-file src="src/ios/MyWidget/MyWidgetBundle.swift" target-dir="MyWidget" />
+        <source-file src="src/ios/MyWidget/MyWidgetControl.swift" target-dir="MyWidget" />
+        <source-file src="src/ios/MyWidget/MyWidget.swift" target-dir="MyWidget" />
+        <source-file src="src/ios/MyWidget/MyWidgetLiveActivity.swift" target-dir="MyWidget" />
+        <source-file src="src/ios/MyWidget/AppIntent.swift" target-dir="MyWidget" />
+        
+        <framework src="WidgetKit.framework" />
+        <framework src="SwiftUI.framework" />
     </platform>
 </plugin>

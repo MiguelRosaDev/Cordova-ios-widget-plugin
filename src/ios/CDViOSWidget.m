@@ -7,11 +7,11 @@
 {
     NSString* text = [command.arguments objectAtIndex:0];
     
-    // Store the text in UserDefaults (shared between app and widget)
+    // Armazena o texto no UserDefaults (compartilhado entre o app e o widget)
     [[NSUserDefaults standardUserDefaults] setObject:text forKey:@"widgetText"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    // Reload the widget
+    // Recarrega o widget
     if (@available(iOS 14.0, *)) {
         [WidgetCenter.sharedCenter reloadAllTimelinesWithHandler:^(NSError * _Nullable error) {
             if (error) {
@@ -21,7 +21,7 @@
             }
         }];
     } else {
-        [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"WidgetKit is not available"] callbackId:command.callbackId];
+        [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"WidgetKit não está disponível"] callbackId:command.callbackId];
     }
 }
 
