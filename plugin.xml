@@ -47,11 +47,5 @@
         
         <framework src="WidgetKit.framework" />
         <framework src="SwiftUI.framework" />
-
-        <preference name="SWIFT_VERSION" default="5.3" />
-
-        <config-file target="build.xcconfig" parent="*">
-            SWIFT_VERSION=$(SWIFT_VERSION)
-        </config-file>
     </platform>
 </plugin>
