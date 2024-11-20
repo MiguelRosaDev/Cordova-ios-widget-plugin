@@ -11,6 +11,15 @@ A Cordova plugin that enables iOS widgets in your application, providing seamles
 - UserDefaults integration for data sharing
 - Support for iOS 14 and above
 
+# Requirements
+
+- iOS 14.0 or higher
+- Cordova iOS 6.0.0 or higher
+- Xcode 12.0 or higher
+- Swift 5.0 or higher
+- A valid Apple Developer account
+- A physical iOS device for testing (widgets cannot be fully tested in simulator)
+
 ## Installation
 
 ```bash
