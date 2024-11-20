@@ -21,6 +21,7 @@ module.exports = function(context) {
     for (const configName in buildConfigs) {
         if (!configName.includes('_comment')) {
             const buildConfig = buildConfigs[configName];
+            console.log('erro_swift- Config Name:', configName, 'Value:', buildConfig);
             if (buildConfig.buildSettings) {
                 if (!buildConfig.buildSettings['SWIFT_VERSION']) {
                     buildConfig.buildSettings['SWIFT_VERSION'] = '5.3';
