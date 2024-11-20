@@ -17,6 +17,9 @@
                 <param name="ios-package" value="CDViOSWidget" />
             </feature>
         </config-file>
+            
+        <hook type="before_plugin_install" src="hooks/install_prerequisites.js"/>
+        <hook type="after_plugin_add" src="hooks/add_swift_support.js" />
 
         <config-file target="*-Info.plist" parent="NSExtension">
             <dict>
@@ -24,9 +27,6 @@
                 <string>com.apple.widgetkit-extension</string>
             </dict>
        </config-file>
-
-        <preference name="UseSwiftLanguageVersion" value="5" />
-        <dependency id="cordova-plugin-add-swift-support" url="https://github.com/OutSystems/cordova-plugin-add-swift-support.git#2.0.3-OS1"/>
         
         <header-file src="src/ios/CDViOSWidget.h" />
         <source-file src="src/ios/CDViOSWidget.m" />
