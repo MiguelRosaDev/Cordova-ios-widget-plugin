@@ -29,7 +29,7 @@ module.exports = function(context) {
     }
 
     fs.writeFileSync(pbxprojPath, xcodeProject.writeSync());
-    console.log('Successfully updated SWIFT_VERSION in project.pbxproj');
+    console.log('erro_swift- Successfully updated SWIFT_VERSION in project.pbxproj');
 };
 
 function getConfigParser(context, configPath) {
