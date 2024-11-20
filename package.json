@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-ios-widget",
+  "version": "1.0.0",
+  "description": "Cordova plugin for creating and updating ios home screen widgets",
+  "cordova": {
+    "id": "cordova-plugin-ios-widget",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "ios",
+    "widget",
+    "home screen"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelRosaDev/cordova-plugin-ios-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MiguelRosaDev/cordova-plugin-ios-widget/issues"
+  },
+  "homepage": "https://github.com/MiguelRosaDev/cordova-plugin-ios-widget#readme",
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova": ">=5.0.0",
+        "cordova-android": ">=4.0.0"
+      }
+    }
+  }
+}
