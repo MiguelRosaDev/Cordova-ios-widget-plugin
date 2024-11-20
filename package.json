@@ -1,13 +1,12 @@
 {
   "name": "cordova-plugin-ios-widget",
   "version": "1.0.0",
-  "description": "Cordova plugin for creating and updating ios home screen widgets",
+  "description": "Cordova plugin for creating and updating iOS home screen widgets",
   "cordova": {
     "id": "cordova-plugin-ios-widget",
     "platforms": [
       "ios"
-    ],
-    "swift-version": "5.0"
+    ]
   },
   "keywords": [
     "ecosystem:cordova",
@@ -29,9 +28,12 @@
   "engines": {
     "cordovaDependencies": {
       "1.0.0": {
-        "cordova": ">=5.0.0",
-        "cordova-android": ">=4.0.0"
+        "cordova": ">=10.0.0",
+        "cordova-ios": ">=6.0.0"
       }
     }
+  },
+  "dependencies": {
+    "xcode": "^3.0.1"
   }
 }
