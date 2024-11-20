@@ -23,6 +23,7 @@
                 <param name="ios-package" value="CDViOSWidget" />
             </feature>
             <preference name="UseSwiftLanguageVersion" value="5" />
+            <preference name="deployment-target" value="18.0" />
         </config-file>
             
         <!--<hook type="before_plugin_install" src="hooks/install_prerequisites.js"/>-->
