@@ -18,6 +18,9 @@
     </js-module>
     
     <platform name="ios">
+        <variable name="USESWIFTLANGUAGEVERSION" value="5" />
+        <variable name="DEPLOYMENT-TARGET" value="18.0" />
+            
         <config-file target="config.xml" parent="/*">
             <feature name="iOSWidget">
                 <param name="ios-package" value="CDViOSWidget" />
