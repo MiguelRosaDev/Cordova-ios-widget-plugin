@@ -18,17 +18,13 @@
     </js-module>
     
     <platform name="ios">
-        <variable name="USESWIFTLANGUAGEVERSION" value="5" />
-        <variable name="DEPLOYMENT-TARGET" value="18.0" />
-            
         <config-file target="config.xml" parent="/*">
             <feature name="iOSWidget">
                 <param name="ios-package" value="CDViOSWidget" />
             </feature>
+            <preference name="UseSwiftLanguageVersion" value="$USESWIFTLANGUAGEVERSION" />
+            <preference name="deployment-target" value="$DEPLOYMENT-TARGET" />
         </config-file>
-
-        <preference name="UseSwiftLanguageVersion" value="5" />
-        <preference name="deployment-target" value="18.0" />
             
         <hook type="before_plugin_install" src="hooks/install_prerequisites.js"/>
         <hook type="after_plugin_add" src="hooks/add_swift_support.js" />
