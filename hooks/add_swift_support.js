@@ -25,9 +25,11 @@ module.exports = function(context) {
             if (buildConfig.buildSettings) {
                 if (!buildConfig.buildSettings['SWIFT_VERSION']) {
                     buildConfig.buildSettings['SWIFT_VERSION'] = '5.3';
+                    buildConfig.buildSettings['IPHONEOS_DEPLOYMENT_TARGET'] = '18.0';
                     console.log('erro_swift Set SWIFT_VERSION to 5.3 for build configuration:', buildConfig.name);
                 } else {
-                    buildConfig.buildSettings['SWIFT_VERSION'] = '5.0';
+                    buildConfig.buildSettings['SWIFT_VERSION'] = '5.3';
+                    buildConfig.buildSettings['IPHONEOS_DEPLOYMENT_TARGET'] = '18.0';
                     console.log('erro_swift- Set SWIFT_VERSION ja configurado:');
                     }
             }
