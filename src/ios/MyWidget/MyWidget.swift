@@ -31,7 +31,7 @@ struct MyWidgetEntryView : View {
         Text(entry.text)
     }
 }
-
+@Main
 struct MyWidget: Widget {
     let kind: String = "MyWidget"
 
